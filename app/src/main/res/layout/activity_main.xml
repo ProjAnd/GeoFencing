@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GeoFence"
+            android:layout_centerInParent="true"/>
+
+        <TextView
+            android:id="@+id/tv_add_geofence"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Add Geofence"
+            android:layout_toLeftOf="@+id/iv_set_time"
+            android:layout_marginRight="5dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_remove_geofence"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Remove Geofence"
+            android:layout_toLeftOf="@+id/iv_set_time"
+            android:layout_marginRight="5dp"
+            android:visibility="gone"
+            />
+
+        <ImageView
+            android:id="@+id/iv_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_logout_24"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="5dp"
+            android:visibility="visible"
+            />
+
+        <ImageView
+            android:id="@+id/iv_set_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_alarm_off_24"
+            android:layout_marginRight="5dp"
+            android:visibility="visible"
+            android:layout_alignParentRight="true"
+            />
+
+    </RelativeLayout>
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="FragmentTagUsage" />
+
+</LinearLayout>

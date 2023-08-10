@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="10dp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/tvEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="email"/>
+
+        <TextView
+            android:id="@+id/tvlat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="lat"/>
+
+        <TextView
+            android:id="@+id/tvlong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="long"/>
+
+    </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>
